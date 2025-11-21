@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganesh's Dark Bachelor Bash</title>
+    <title>Ganesh's Dark Bachelor Bash - One Last Ride Before the Tie</title>
+    <meta name="description" content="Ganesh's epic bachelor night starts at 8 PM tonight at Urmil's Place. Dark, wild, and unforgettable. Bring your A-game (or whatever's left).">
+    <meta property="og:title" content="Ganesh's Bachelor Night: Unleash the Beast">
+    <meta property="og:description" content="One last wild night before the knot. 8 PM sharp at Urmil's - 123 Dark Alley, Shadow City. Timer ticking... Don't miss the chaos!">
+    <meta property="og:image" content="https://images.pexels.com/photos/7163815/pexels-photo-7163815.jpeg?auto=compress&cs=tinysrgb&w=1920">
+    <meta property="og:url" content="https://yourusername.github.io/bachelors-bash">
+    <meta property="og:type" content="website">
     <style>
         body {
             font-family: 'Arial Black', sans-serif;
-            background-color: #000;
+            background-image: url('https://images.pexels.com/photos/7163815/pexels-photo-7163815.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: #fff;
             margin: 0;
             padding: 0;
@@ -16,9 +25,10 @@
             flex-direction: column;
             height: 100vh;
             justify-content: space-between;
+            text-shadow: 2px 2px 4px #000;
         }
         header {
-            background: linear-gradient(to bottom, #000, #1a0000);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(26,0,0,0.8));
             padding: 20px;
             text-align: center;
             border-bottom: 2px solid #ff0000;
@@ -27,7 +37,6 @@
             margin: 0;
             font-size: 2.5em;
             color: #ff0000;
-            text-shadow: 2px 2px 4px #000;
             letter-spacing: 3px;
         }
         .main {
@@ -36,51 +45,51 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            background: rgba(0,0,0,0.4);
         }
-        .svgs {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 50px;
-            max-width: 100%;
+        .content {
+            text-align: center;
             padding: 20px;
         }
-        svg {
-            width: 200px;
-            height: 300px;
-            filter: drop-shadow(0 0 10px #ff0000);
+        .content p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #ccc;
         }
         .timer {
             position: absolute;
             top: 20px;
             right: 20px;
-            background: rgba(0,0,0,0.8);
-            padding: 10px 20px;
-            border: 1px solid #ff0000;
-            border-radius: 5px;
-            font-size: 1.2em;
+            background: rgba(0,0,0,0.9);
+            padding: 15px 25px;
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            font-size: 1.5em;
             color: #ff0000;
+            box-shadow: 0 0 20px rgba(255,0,0,0.5);
         }
         .location {
             position: absolute;
             bottom: 20px;
             left: 20px;
-            background: rgba(0,0,0,0.8);
-            padding: 10px 20px;
-            border: 1px solid #ff0000;
-            border-radius: 5px;
-            font-size: 1em;
+            background: rgba(0,0,0,0.9);
+            padding: 15px 25px;
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            font-size: 1.1em;
+            text-align: left;
+            box-shadow: 0 0 20px rgba(255,0,0,0.5);
         }
         @media (max-width: 768px) {
-            .svgs {
-                gap: 20px;
-            }
-            svg {
-                width: 150px;
-                height: 225px;
-            }
             h1 {
                 font-size: 2em;
+            }
+            .timer, .location {
+                font-size: 1em;
+                padding: 10px 15px;
+            }
+            .content p {
+                font-size: 1em;
             }
         }
     </style>
@@ -88,51 +97,26 @@
 <body>
     <header>
         <h1>GANESH'S BACHELOR NIGHT</h1>
-        <p style="margin: 5px 0; font-size: 1.2em; color: #ccc;">One Last Ride Before the Tie</p>
+        <p>One Last Ride Before the Tie</p>
     </header>
     
     <div class="main">
-        <div class="svgs">
-            <!-- SVG of Boobs -->
-            <svg viewBox="0 0 100 150">
-                <circle cx="30" cy="50" r="25" fill="#ff69b4" stroke="#ff0000" stroke-width="2"/>
-                <circle cx="70" cy="50" r="25" fill="#ff69b4" stroke="#ff0000" stroke-width="2"/>
-                <path d="M20 75 Q50 100 80 75" fill="none" stroke="#ff69b4" stroke-width="10"/>
-                <ellipse cx="50" cy="120" rx="40" ry="20" fill="#8b0000" opacity="0.3"/>
-            </svg>
-            
-            <!-- SVG of Chick 1 -->
-            <svg viewBox="0 0 100 200">
-                <path d="M50 10 Q30 50 50 100 Q70 50 50 10" fill="#ff1493"/>
-                <circle cx="35" cy="120" r="8" fill="#ffd700"/>
-                <circle cx="65" cy="120" r="8" fill="#ffd700"/>
-                <path d="M40 130 L50 150 L60 130" fill="#ff69b4"/>
-                <line x1="50" y1="140" x2="50" y2="180" stroke="#000" stroke-width="3"/>
-                <line x1="30" y1="160" x2="20" y2="170" stroke="#000" stroke-width="2"/>
-                <line x1="70" y1="160" x2="80" y2="170" stroke="#000" stroke-width="2"/>
-            </svg>
-            
-            <!-- SVG of Chick 2 -->
-            <svg viewBox="0 0 100 200">
-                <path d="M50 20 Q20 60 40 120 Q60 60 50 20" fill="#dc143c"/>
-                <circle cx="40" cy="130" r="7" fill="#ffdead"/>
-                <circle cx="60" cy="130" r="7" fill="#ffdead"/>
-                <path d="M45 140 L50 160 L55 140" fill="#ff1493"/>
-                <line x1="50" y1="150" x2="50" y2="190" stroke="#000" stroke-width="3"/>
-                <line x1="25" y1="170" x2="15" y2="180" stroke="#000" stroke-width="2"/>
-                <line x1="75" y1="170" x2="85" y2="180" stroke="#000" stroke-width="2"/>
-            </svg>
+        <div class="content">
+            <p>Dark desires await. The beast unleashes at 8 PM.</p>
+            <p>Timer's ticking... Will you survive the night?</p>
         </div>
         
         <div class="timer" id="timer"></div>
         <div class="location">
             <strong>Starts: 8:00 PM Tonight</strong><br>
             Urmil's Place - 123 Dark Alley, Shadow City<br>
-            (GPS: -33.8688, 151.2093) - Bring Your Wild Side
+            GPS: -33.8688, 151.2093<br>
+            Bring Your Wild Side (No Mercy)
         </div>
     </div>
 
     <script>
+        // Assuming event is today, Nov 21, 2025 at 8 PM
         const eventTime = new Date('2025-11-21T20:00:00').getTime();
         const timer = document.getElementById('timer');
         
@@ -144,9 +128,9 @@
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                timer.innerHTML = `Time Left: ${hours}h ${minutes}m ${seconds}s`;
+                timer.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
             } else {
-                timer.innerHTML = "Party's On - Get In Here!";
+                timer.innerHTML = "LIVE - Dive In!";
             }
         }
         
