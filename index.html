@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganesh's Dark Bachelor Bash - One Last Ride Before the Tie</title>
-    <meta name="description" content="Ganesh's epic bachelor night starts at 8 PM tonight at Urmil's Place. Dark, wild, and unforgettable. Bring your A-game (or whatever's left).">
+    <meta name="description" content="Ganesh's epic bachelor night starts at 8 PM tonight at Urmil's Mansion. Dark, wild, and unforgettable. Bring your A-game (or whatever's left).">
     <meta property="og:title" content="Ganesh's Bachelor Night: Unleash the Beast">
-    <meta property="og:description" content="One last wild night before the knot. 8 PM sharp at Urmil's - 123 Dark Alley, Shadow City. Timer ticking... Don't miss the chaos!">
+    <meta property="og:description" content="One last wild night before the knot. 8 PM sharp at Urmil's Mansion. Timer ticking... Don't miss the chaos!">
     <meta property="og:image" content="https://images.pexels.com/photos/7163815/pexels-photo-7163815.jpeg?auto=compress&cs=tinysrgb&w=1920">
     <meta property="og:url" content="https://yourusername.github.io/bachelors-bash">
     <meta property="og:type" content="website">
@@ -39,6 +39,30 @@
             color: #ff0000;
             letter-spacing: 3px;
         }
+        .banners {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            background: rgba(0,0,0,0.6);
+            border: 1px solid #ff0000;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .banner {
+            font-size: 1.1em;
+            color: #ff69b4;
+            text-align: center;
+            animation: pulse 2s infinite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); color: #ff69b4; }
+            50% { transform: scale(1.05); color: #ff1493; }
+            100% { transform: scale(1); color: #ff69b4; }
+        }
         .main {
             flex: 1;
             display: flex;
@@ -50,6 +74,14 @@
         .content {
             text-align: center;
             padding: 20px;
+        }
+        .venue {
+            font-size: 1.5em;
+            color: #ff0000;
+            margin: 20px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         .content p {
             font-size: 1.2em;
@@ -68,27 +100,34 @@
             color: #ff0000;
             box-shadow: 0 0 20px rgba(255,0,0,0.5);
         }
-        .location {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
+        footer {
             background: rgba(0,0,0,0.9);
-            padding: 15px 25px;
-            border: 2px solid #ff0000;
-            border-radius: 10px;
-            font-size: 1.1em;
-            text-align: left;
-            box-shadow: 0 0 20px rgba(255,0,0,0.5);
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid #ff0000;
+        }
+        .bottom-line {
+            font-size: 1.2em;
+            color: #ff0000;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         @media (max-width: 768px) {
             h1 {
                 font-size: 2em;
             }
-            .timer, .location {
+            .timer {
                 font-size: 1em;
                 padding: 10px 15px;
             }
             .content p {
+                font-size: 1em;
+            }
+            .venue {
+                font-size: 1.3em;
+            }
+            .banner {
                 font-size: 1em;
             }
         }
@@ -100,20 +139,25 @@
         <p>One Last Ride Before the Tie</p>
     </header>
     
+    <div class="banners">
+        <div class="banner">💋 Tease Tonight, Regret Tomorrow? 😈</div>
+        <div class="banner">🔥 Bedroom Secrets: Level Up or Lock Up! 😉</div>
+        <div class="banner">🍑 One Peek, No Promises... Or Are There? 👀</div>
+    </div>
+    
     <div class="main">
         <div class="content">
             <p>Dark desires await. The beast unleashes at 8 PM.</p>
+            <div class="venue">Urmil's Mansion</div>
             <p>Timer's ticking... Will you survive the night?</p>
         </div>
         
         <div class="timer" id="timer"></div>
-        <div class="location">
-            <strong>Starts: 8:00 PM Tonight</strong><br>
-            Urmil's Place - 123 Dark Alley, Shadow City<br>
-            GPS: -33.8688, 151.2093<br>
-            Bring Your Wild Side (No Mercy)
-        </div>
     </div>
+    
+    <footer>
+        <div class="bottom-line">Come and know how to Upgrade your bedroom tricks - Exclusively Amit Anto</div>
+    </footer>
 
     <script>
         // Assuming event is today, Nov 21, 2025 at 8 PM
