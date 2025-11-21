@@ -3,109 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bachelor's Pad - Living Free & Sassy</title>
+    <title>Ganesh's Dark Bachelor Bash</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4a261;
-            color: #2a2a2a;
+            font-family: 'Arial Black', sans-serif;
+            background-color: #000;
+            color: #fff;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
         }
         header {
-            background-color: #e76f51;
+            background: linear-gradient(to bottom, #000, #1a0000);
             padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            border-bottom: 2px solid #ff0000;
         }
         h1 {
             margin: 0;
-            color: #fff;
             font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            color: #ff0000;
+            text-shadow: 2px 2px 4px #000;
+            letter-spacing: 3px;
         }
-        .intro {
-            max-width: 800px;
-            margin: 20px auto;
+        .main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .svgs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            max-width: 100%;
             padding: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
         }
-        .intro p {
-            font-size: 1.2em;
-            font-style: italic;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .gallery img {
-            width: 100%;
+        svg {
+            width: 200px;
             height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
+            filter: drop-shadow(0 0 10px #ff0000);
         }
-        .gallery img:hover {
-            transform: scale(1.05);
+        .timer {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0,0,0,0.8);
+            padding: 10px 20px;
+            border: 1px solid #ff0000;
+            border-radius: 5px;
+            font-size: 1.2em;
+            color: #ff0000;
         }
-        .caption {
-            text-align: center;
-            margin-top: 10px;
-            font-weight: bold;
-            color: #e76f51;
+        .location {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0,0,0,0.8);
+            padding: 10px 20px;
+            border: 1px solid #ff0000;
+            border-radius: 5px;
+            font-size: 1em;
         }
-        footer {
-            background-color: #264653;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        @media (max-width: 768px) {
+            .svgs {
+                gap: 20px;
+            }
+            svg {
+                width: 150px;
+                height: 225px;
+            }
+            h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bachelor's Pad: Where Freedom Tastes Like Beer & Bad Decisions</h1>
+        <h1>GANESH'S BACHELOR NIGHT</h1>
+        <p style="margin: 5px 0; font-size: 1.2em; color: #ccc;">One Last Ride Before the Tie</p>
     </header>
     
-    <section class="intro">
-        <h2>Welcome to the Ultimate Bro Cave</h2>
-        <p>Single life? More like VIP access to chaos and charm. No curfews, no compromises—just you, your couch, and endless possibilities. Scroll down for some eye candy to fuel your fantasies. Wink wink.</p>
-        <p>Pro tip: Laundry? What's that? Pizza delivery is your maid service.</p>
-    </section>
-    
-    <section class="gallery">
-        <figure>
-            <img src="https://cdn.pixabay.com/photo/2017/08/07/14/02/beautiful-2606825_1280.jpg" alt="Sassy smile inspiration #1">
-            <figcaption class="caption">When she says yes to pizza night.</figcaption>
-        </figure>
-        <figure>
-            <img src="https://cdn.pixabay.com/photo/2016/11/29/05/48/woman-1868651_1280.jpg" alt="Fun vibe queen #2">
-            <figcaption class="caption">The one who gets your dad jokes.</figcaption>
-        </figure>
-        <figure>
-            <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/woman-2695338_1280.jpg" alt="Cheeky charm #3">
-            <figcaption class="caption">Plotting world domination... or Netflix?</figcaption>
-        </figure>
-        <figure>
-            <img src="https://cdn.pixabay.com/photo/2018/01/15/07/49/woman-3083383_1280.jpg" alt="Bachelor bait #4">
-            <figcaption class="caption">Because why settle when you can scroll?</figcaption>
-        </figure>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Bachelor's Pad. All rights reserved... except for the fun part. Images courtesy of Pixabay (royalty-free).</p>
-    </footer>
+    <div class="main">
+        <div class="svgs">
+            <!-- SVG of Boobs -->
+            <svg viewBox="0 0 100 150">
+                <circle cx="30" cy="50" r="25" fill="#ff69b4" stroke="#ff0000" stroke-width="2"/>
+                <circle cx="70" cy="50" r="25" fill="#ff69b4" stroke="#ff0000" stroke-width="2"/>
+                <path d="M20 75 Q50 100 80 75" fill="none" stroke="#ff69b4" stroke-width="10"/>
+                <ellipse cx="50" cy="120" rx="40" ry="20" fill="#8b0000" opacity="0.3"/>
+            </svg>
+            
+            <!-- SVG of Chick 1 -->
+            <svg viewBox="0 0 100 200">
+                <path d="M50 10 Q30 50 50 100 Q70 50 50 10" fill="#ff1493"/>
+                <circle cx="35" cy="120" r="8" fill="#ffd700"/>
+                <circle cx="65" cy="120" r="8" fill="#ffd700"/>
+                <path d="M40 130 L50 150 L60 130" fill="#ff69b4"/>
+                <line x1="50" y1="140" x2="50" y2="180" stroke="#000" stroke-width="3"/>
+                <line x1="30" y1="160" x2="20" y2="170" stroke="#000" stroke-width="2"/>
+                <line x1="70" y1="160" x2="80" y2="170" stroke="#000" stroke-width="2"/>
+            </svg>
+            
+            <!-- SVG of Chick 2 -->
+            <svg viewBox="0 0 100 200">
+                <path d="M50 20 Q20 60 40 120 Q60 60 50 20" fill="#dc143c"/>
+                <circle cx="40" cy="130" r="7" fill="#ffdead"/>
+                <circle cx="60" cy="130" r="7" fill="#ffdead"/>
+                <path d="M45 140 L50 160 L55 140" fill="#ff1493"/>
+                <line x1="50" y1="150" x2="50" y2="190" stroke="#000" stroke-width="3"/>
+                <line x1="25" y1="170" x2="15" y2="180" stroke="#000" stroke-width="2"/>
+                <line x1="75" y1="170" x2="85" y2="180" stroke="#000" stroke-width="2"/>
+            </svg>
+        </div>
+        
+        <div class="timer" id="timer"></div>
+        <div class="location">
+            <strong>Starts: 8:00 PM Tonight</strong><br>
+            Urmil's Place - 123 Dark Alley, Shadow City<br>
+            (GPS: -33.8688, 151.2093) - Bring Your Wild Side
+        </div>
+    </div>
+
+    <script>
+        const eventTime = new Date('2025-11-21T20:00:00').getTime();
+        const timer = document.getElementById('timer');
+        
+        function updateTimer() {
+            const now = new Date().getTime();
+            const distance = eventTime - now;
+            
+            if (distance > 0) {
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                timer.innerHTML = `Time Left: ${hours}h ${minutes}m ${seconds}s`;
+            } else {
+                timer.innerHTML = "Party's On - Get In Here!";
+            }
+        }
+        
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    </script>
 </body>
 </html>
